@@ -1,0 +1,689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title></title>
+      <style type="text/css">
+      
+        /* ------------------------------------- 
+        		General styles 
+        ------------------------------------- */         
+         body {width:100% !important; margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+         #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+         img {outline:none; text-decoration:none; border:none; -ms-interpolation-mode: bicubic;}
+         a img {border:none;}
+         .image_fix {display:block;}
+         p {margin: 0px !important;}
+         table td {border-collapse: collapse;}
+         table {border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;}
+         table[class=full] {width: 100%;}     
+         .FluidButton {margin: 0 !important;}             
+          /* Client-specific Styles */
+         #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+         /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+         .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.*/
+
+        /* ------------------------------------- 
+        		Typography 
+        ------------------------------------- */        
+         body, td {font-family: Helvetica, Arial, sans-serif; font-size:14px; color: #000000;}
+                 
+        /* ------------------------------------- 
+        		Tablet styles 
+        ------------------------------------- */
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #ffffff;
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #ffffff !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 440px !important; text-align:center !important;}
+         td[class=devicewidth] {width: 440px !important; text-align:center !important;}
+         table[class=devicewidthinner] {width: 420px !important; text-align:center !important;}
+         td[class=devicewidthinner] {width: 420px !important; text-align:center !important;}        
+         table[class="emhide"] {display: none !important;}
+         td[class="emhide"] {display: none !important;}         
+         img[class="bigimage"] {width: 440px !important; height:169px !important;}
+         img[class="col2img"] {width: 260px !important; height:103px !important;}
+         img[class="col2img2"] {width: 260px !important; height:103px !important; padding-top:25px;}         
+         td[class="logo"] {text-align: center !important;} 
+         img[class="features"] {padding-bottom:25px;}  
+		     table[class=FluidButton] {text-align:center; margin: 0px auto !important;}                      
+         table[class=sep] {width: 80% !important;}  
+         td[class=mobilecentering] {text-align:center !important;}        
+         td[class=footer] {width: 100%; padding-left: 10px; padding-right: 10px; text-align:center !important;}                   
+         }
+         
+        /* ------------------------------------- 
+        		Mobile styles 
+        ------------------------------------- */
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #ffffff; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #ffffff !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 280px !important; text-align:center !important;}
+         td[class=devicewidth] {width: 280px !important; text-align:center !important;}
+         table[class=devicewidthinner] {width: 260px !important; text-align:center !important;}
+         td[class=devicewidthinner] {width: 260px !important; text-align:center !important;}
+         table[class="emhide"] {display: none !important; }
+         td[class="emhide"] {display: none !important; }
+         img[class="bigimage"] {width: 280px !important; height:116px !important;}
+         img[class="col2img"] {width: 260px !important; height:103px !important;}
+         img[class="col2img2"] {width: 260px !important; height:103px !important;} 
+         }
+
+        /* ------------------------------------- 
+        		Mailchimp styles 
+        ------------------------------------- */                       
+
+        /**
+        * @tab Page
+        * @section Button background color
+        * @tip Set the color for buttons.
+        * @style Lines
+        */
+        
+        #buttoncolor{
+            /*@editable*/ background-color:#E74C3C !important;
+        }
+        
+        /**
+        * @tab Page
+        * @section Horizontal lines
+        * @tip Set the color for the 3 red horizontal divider lines.
+        * @style Lines
+        */
+        
+        #lines{
+            /*@editable*/ background-color:#E74C3C !important;
+        }
+         
+      </style>      
+   </head>
+   
+   <body bgcolor="#ECF0F1">
+      
+   <!-- Online version text -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" class="emhide" mc:repeatable="preheader">      
+         <tr>
+            <td align="center">
+               <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                 
+                     <tr>
+                        <td align="center">
+                           <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                              
+                                 <!-- Spacing -->
+                                 <tr>
+                                    <td width="100%" height="7" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                 </tr>
+                                 <!-- /Spacing -->
+                                 <!-- Text -->
+                                 <tr>
+                                    <td align="right" valign="middle" style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; color: #999999;" mc:edit="Preheader">
+                                       Want to read this email in your browser?  <a href="*|ARCHIVE|*" style="text-decoration: none; color: #E74C3C;">click here</a> 
+                                    </td>
+                                 </tr>
+                                 <!-- /Text -->
+                                 <!-- Spacing -->
+                                 <tr>
+                                    <td width="100%" height="7" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                 </tr>
+                                 <!-- /Spacing -->                              
+                           </table>
+                        </td>
+                     </tr>                 
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- /Online version text -->   
+   
+   <!-- Start of header -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" mc:repeatable="header">      
+         <tr>
+            <td align="center">
+               <table bgcolor="#FFFFFF" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                  
+                     <tr>
+                        <td align="center">
+                           <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                              
+                                 <tr>
+                                    <td align="center">
+                                       <table width="540" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                                          
+                                            <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- End of Spacing -->                                          
+                                             <!-- Logo: 179x40 pixels -->
+                                             <tr>
+                                                <td width="100%" align="center" valign="middle" class="devicewidthinner" style="text-align:center;">
+                                                   <img mc:edit width="179" height="40" src="http://placehold.it/179x40" alt="logo" border="0" style="border:none; outline:none; text-decoration:none;">
+                                                </td>
+                                             </tr>
+                                             <!-- End of Logo -->
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="28" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- End of Spacing -->                                            
+                                       </table>
+                                    </td>
+                                 </tr>                             
+                           </table>
+                        </td>
+                     </tr>                  
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of Header -->
+
+   <!-- Start of main image -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" mc:repeatable="banner">      
+         <tr>
+            <td align="center">
+            <!-- Main image: 600x203 pixels and line -->
+               <table bgcolor="#ffffff" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                     <tr>
+                        <td width="600" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+                          <img mc:edit width="600" border="0" height="203" alt="main image" style="display:block; border:none; outline:none; text-decoration:none;" src="http://placehold.it/600x203" class="bigimage">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td height="4" style="font-size: 0px; line-height: 0px;" bgcolor="#E74C3C" id="lines">&nbsp;</td>
+                     </tr>   
+               </table>  
+            </td>
+            <!-- End of Main image -->
+         </tr>      
+   </table>
+   <!-- End of main image -->
+ 
+   <!-- Left Aligned Image-->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" mc:repeatable="left-image">      
+         <tr>
+            <td align="center">
+               <table bgcolor="#ffffff" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                     <!-- Spacing -->
+                     <tr>
+                        <td height="24" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>
+                     <!-- Spacing -->
+                     <tr>
+                        <td align="center">
+                           <table width="540" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">                             
+                                 <tr>
+                                    <td align="center">
+                                       <table width="187" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">                                          
+                                             <!-- Features: 187x116 pixels --> 
+                                             <tr>
+                                                 <td width="187" height="116" align="center">
+                                                   <a href="#">
+                                                   <img mc:edit src="http://placehold.it/187x116" alt="features" border="0" width="187" height="116" style="display:block; border:none; outline:none; text-decoration:none;" class="features">
+                                                   </a>
+                                                </td>
+                                             </tr>
+                                             <!-- End of Features -->                                          
+                                       </table>
+                                       <!-- mobile spacing -->
+                                       <table align="left" border="0" cellpadding="0" cellspacing="0">                                          
+                                             <tr>
+                                                <td width="30" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;" class="mobilespacing">&nbsp;</td>
+                                             </tr>                                          
+                                       </table>
+                                       <!-- mobile spacing -->
+                                       <!-- start of right column -->
+                                       <table width="323" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">                                         
+                                             <!-- Title -->
+                                             <tr>
+                                                <td style="font-family: Helvetica, Arial, sans-serif; text-align:left; font-weight:bold; font-size: 20px; line-height:20px;" mc:edit="2nd Headline" class="mobilecentering">
+                                                   Left aligned image
+                                                </td>
+                                             </tr>
+                                             <!-- End of title -->
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="14" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- Spacing -->
+                                             <!-- Content -->
+                                             <tr>
+                                                <td style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: #0E0E0E; text-align:left;font-weight: normal; line-height:18px;" mc:edit="2nd Texts" class="mobilecentering">
+                                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore est.
+                                                </td>
+                                             </tr>
+                                             <!-- End of content -->
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- End of Spacing -->
+                                             <!-- Button -->
+                                             <tr>
+                                                <td width="100%" class="devicewidth">
+                                                   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;" class="FluidButton">                                                      
+                                                         <tr>
+                                                            <td height="30" style="background-color:#E74C3C; border-top-left-radius:5px; border-bottom-left-radius:5px;border-top-right-radius:5px; border-bottom-right-radius:5px; background-clip: padding-box;font-size:14px; font-family: Helvetica, Arial, sans-serif; text-align:center; color:#ffffff; font-weight: 300; padding-left:26px; padding-right:26px;" id="buttoncolor">
+                                                               <a style="color: #ffffff; text-align:center;text-decoration: none;" href="#" mc:edit="2nd Button">Click</a>
+                                                            </td>
+                                                         </tr>                                                     
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <!-- End of Button -->                                                                           
+                                       </table>
+                                       <!-- end of right column -->
+                                    </td>
+                                 </tr>
+                              
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- Spacing -->
+                     <tr>
+                        <td height="24" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>
+                     <!-- End of Spacing -->                 
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of Left Aligned Image-->
+
+  <!-- Start of separator -->
+  <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" class="sep" mc:repeatable="separator2">      
+         <tr>
+            <td align="center">
+               <table bgcolor="#ffffff" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                     <!-- Spacing -->
+                     <tr>
+                        <td width="100%" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>
+                     <!-- End of Spacing -->                     
+                     <tr>
+                        <td align="center">
+                           <table width="540" align="center" bgcolor="#E74C3C" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner" id="lines">                             
+                               <tr>
+                                  <td height="1" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                               </tr>                               
+                           </table>
+                        </td>
+                     </tr>  
+                     <!-- Spacing -->
+                     <tr>
+                        <td width="100%" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>
+                     <!-- End of Spacing -->                                    
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of separator -->
+   <!-- CTA -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" mc:repeatable="title+text">      
+         <tr>
+            <td align="center">
+               <table bgcolor="#ffffff" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                 
+                     <tr>
+                        <td align="center">
+                           <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                             
+                                 <!-- Spacing -->
+                                 <tr>
+                                    <td width="100%" height="30" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                 </tr>
+                                 <!-- End of Spacing -->
+                                 <tr>
+                                    <td align="center">
+                                       <table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner">                                          
+                                             <!-- Title -->
+                                             <tr>
+                                                <td style="font-family: Helvetica, Arial, sans-serif; text-align:center; font-weight:bold; font-size: 24px; line-height:24px;" mc:edit="Main Headline">
+                                                   Call to Action
+                                                </td>
+                                             </tr>
+                                             <!-- End of Title -->
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- End of Spacing -->
+                                             <!-- Content -->
+                                             <tr>
+                                                <td style="font-family: Helvetica, Arial, sans-serif; font-weight: normal; font-size:14px; color: #0E0E0E; line-height:18px; text-align:center;" mc:edit="Main Text">
+                                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et filiatis dolore magna aliquam tempus.
+                                                </td>
+                                             </tr>
+                                             <!-- End of content -->
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- End of Spacing -->
+                                             <!-- Button -->
+                                             <tr>
+                                                <td align="center">
+                                                   <table height="40" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" style="border-collapse:separate;">                                                      
+                                                         <tr>
+                                                            <td width="auto" align="center" valign="middle" height="40" style="background-color:#E74C3C; border-top-left-radius:5px; border-bottom-left-radius:5px; border-top-right-radius:5px; border-bottom-right-radius:5px; background-clip: padding-box; font-size:17px; font-family: Helvetica, Arial, sans-serif; text-align:center; color:#ffffff; font-weight: bold; letter-spacing: 1px; padding-left:42px; padding-right:42px;" id="buttoncolor">
+                                                               <span style="color: #ffffff; font-size:17px;">
+                                                               <a style="color: #ffffff; text-align:center;text-decoration: none;" href="#" mc:edit="Main Button">Confirm my email</a>
+                                                               </span>
+                                                            </td>
+                                                         </tr>                                                     
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <!-- End of Button -->                                                                                                                                                                                        
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="24" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- End of Spacing -->                                                                                                                     
+                                       </table>
+                                    </td>
+                                 </tr>                             
+                           </table>
+                        </td>
+                     </tr>                  
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of CTA -->
+     <!-- Start of separator -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" class="sep" mc:repeatable="separator1">      
+         <tr>
+            <td align="center">
+               <table bgcolor="#ffffff" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                     <!-- Spacing -->
+                     <tr>
+                        <td width="100%" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>
+                     <!-- End of Spacing -->                     
+                     <tr>
+                        <td align="center">
+                           <table width="540" align="center" bgcolor="#E74C3C" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner" id="lines">                             
+                               <tr>
+                                  <td height="1" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+                               </tr>                               
+                           </table>
+                        </td>
+                     </tr>  
+                     <!-- Spacing -->
+                     <tr>
+                        <td width="100%" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>
+                     <!-- End of Spacing -->                                    
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of separator -->
+   <!-- Block 3 and 4, 2-columns -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" mc:repeatable="2-images+text-columns">      
+         <tr>
+            <td align="center">
+               <table bgcolor="#ffffff" width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                  
+                     <tr>
+                        <td width="100%" height="24" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td align="center">
+                           <table width="540" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                             
+                                 <tr>
+                                    <td align="center">
+                                       <table width="260" align="left" border="0" cellpadding="0" cellspacing="0" class="devicewidth">                                          
+                                             <!-- Left Image 252x103 pixels -->
+                                             <tr>
+                                                <td width="260" height="103" align="center">
+                                                   <img mc:edit src="http://placehold.it/252x103" alt="" border="0" width="260" height="103" style="display:block; border:none; outline:none; text-decoration:none;" class="col2img">
+                                                </td>
+                                             </tr>
+                                             <!-- End of Left Image -->
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td align="center">
+                                                   <!-- start of text content table -->
+                                                   <table width="260" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">                                                      
+                                                         <!-- Title -->
+                                                         <tr>
+                                                            <td style="font-family: Helvetica, Arial, sans-serif; text-align:left; font-weight:bold; font-size: 20px; line-height:20px;" mc:edit="3rd Headline" class="mobilecentering">
+                                                               Left Column
+                                                            </td>
+                                                         </tr>
+                                                         <!-- End of title -->
+                                                         <!-- Spacing -->
+                                                         <tr>
+                                                            <td width="100%" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                         </tr>
+                                                         <!-- End of Spacing -->
+                                                         <!-- Content -->
+                                                         <tr>
+                                                            <td style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: #0E0E0E; text-align:left; line-height: 18px;" mc:edit="3rd Texts" class="mobilecentering">
+                                                               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum.
+                                                            </td>
+                                                         </tr>
+                                                         <!-- End of content -->
+                                                         <!-- Spacing -->
+                                                         <tr>
+                                                            <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                         </tr>
+                                                         <!-- End of Spacing -->
+                                                         <!-- Button -->
+                                                         <tr>
+                                                            <td align="center">
+                                                               <table height="30" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" style="border-collapse:separate;">                                                                  
+                                                                     <tr>
+                                                                        <td width="auto" align="center" valign="middle" height="30" style=" background-color:#E74C3C; border-top-left-radius:5px; border-bottom-left-radius:5px;border-top-right-radius:5px; border-bottom-right-radius:5px; background-clip: padding-box; font-size:14px; font-family: Helvetica, Arial, sans-serif; text-align:center; color:#ffffff; padding-left:26px; padding-right:26px;" id="buttoncolor">
+                                                                           <span style="color: #ffffff;">
+                                                                           <a style="color: #ffffff; text-align:center;text-decoration: none;" href="#" mc:edit="3rd Button">Learn more</a>
+                                                                           </span>
+                                                                        </td>
+                                                                     </tr>                                                                 
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                         <!-- End of Button -->                                                      
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <!-- end of text content table -->                                          
+                                       </table>
+                                       <!-- end of left column -->
+                                       <!-- spacing for mobile devices-->
+                                       <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobilespacing">                                          
+                                             <tr>
+                                                <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>                                          
+                                       </table>
+                                       <!-- end of spacing for mobile devices-->
+                                       <!-- start of right column -->
+                                       <table width="260" align="right" border="0" cellpadding="0" cellspacing="0" class="devicewidth">                                         
+                                             <!-- Right Image 252x103 pixels -->
+                                             <tr>
+                                                <td width="260" height="103" align="center">
+                                                   <img mc:edit src="http://placehold.it/252x103" alt="" border="0" width="260" height="103" style="display:block; border:none; outline:none; text-decoration:none;" class="col2img2">
+                                                </td>
+                                             </tr>
+                                             <!-- End of Right Image -->
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                             </tr>
+                                             <!-- Spacing -->
+                                             <tr>
+                                                <td align="center">
+                                                   <!-- start of text content table -->
+                                                   <table width="260" align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidthinner">                                                      
+                                                         <!-- Title -->
+                                                         <tr>
+                                                            <td style="font-family: Helvetica, Arial, sans-serif; text-align:left; font-weight:bold; font-size: 20px; line-height:20px;" mc:edit="4th Headline" class="mobilecentering">
+                                                               Right Column
+                                                            </td>
+                                                         </tr>
+                                                         <!-- End of title -->
+                                                         <!-- Spacing -->
+                                                         <tr>
+                                                            <td width="100%" height="10" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                         </tr>
+                                                         <!-- End of Spacing -->
+                                                         <!-- Content -->
+                                                         <tr>
+                                                            <td style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: #0E0E0E; text-align:left;line-height: 18px;" mc:edit="4th Texts" class="mobilecentering">
+                                                               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempam et justo duo dolores et ea rebum.
+                                                            </td>
+                                                         </tr>
+                                                         <!-- End of content -->
+                                                         <!-- Spacing -->
+                                                         <tr>
+                                                            <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                                         </tr>
+                                                         <!-- End of Spacing -->
+                                                         <!-- Button -->
+                                                         <tr>
+                                                            <td align="center">
+                                                               <table height="30" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" style="border-collapse:separate;">                                                                
+                                                                     <tr>
+                                                                        <td width="auto" align="center" valign="middle" height="30" style=" background-color:#E74C3C; border-top-left-radius:5px; border-bottom-left-radius:5px;border-top-right-radius:5px; border-bottom-right-radius:5px; background-clip: padding-box; font-size:14px; font-family: Helvetica, Arial, sans-serif; text-align:center; color:#ffffff; padding-left:26px; padding-right:26px;" id="buttoncolor">
+                                                                           <span style="color: #ffffff;">
+                                                                           <a style="color: #ffffff; text-align:center;text-decoration: none;" href="#" mc:edit="4th Button">Learn more</a>
+                                                                           </span>
+                                                                        </td>
+                                                                     </tr>                                                                 
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                         <!-- End of Button -->                                                     
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <!-- end of text content table -->                                          
+                                       </table>
+                                       <!-- end of right column -->
+                                    </td>
+                                 </tr>                            
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td width="100%" height="27" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                     </tr>                  
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of Block 3 and 4, 2-columns -->   
+
+   <!-- Start of footermenu -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" mc:repeatable="social">      
+         <tr>
+            <td align="center">
+               <table width="600" bgcolor="#2C3E50" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                 
+                     <tr>
+                        <td align="center">
+                           <table width="540" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                             
+                                <!-- Spacing -->
+                                <tr>
+                                    <td width="100%" height="25" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                </tr>
+                                 <!-- End of Spacing --> 
+                                    <!-- Company information -->                                
+                                    <tr>
+                                    <td width="100%" align="center" valign="middle" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; color:#fefefe; text-align:center;" class="footer" mc:edit="footer text">
+                                    <em>Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                    <br>
+                                    *|IFNOT:ARCHIVE_PAGE|*
+                                    *|LIST:DESCRIPTION|*
+                                    <br>
+                                    <br>
+                                    <strong>Our mailing address is:</strong>
+                                    <br>
+                                    *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+                                    <br>
+                                    <br>
+                                    Want to change how you receive these emails?<br>
+                                    You can <a>update your preferences</a> or <a>unsubscribe from this list</a>
+                                    <br>
+                                    <br>
+                                    *|IF:REWARDS|* *|HTML:REWARDS|*
+                                    *|END:IF|*
+                                    </td>                                 
+                                    </tr> 
+                                    <!-- End of Company information -->
+                                <!-- Spacing -->
+                                <tr>
+                                    <td width="100%" height="20" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                </tr>
+                                 <!-- End of Spacing -->                                                              
+                                <!-- Spacing -->
+                                <tr>
+                                    <td width="100%" height="15" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                </tr>
+                                 <!-- End of Spacing -->                                                                  
+                           </table>
+                        </td>
+                     </tr>                  
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of footermenu -->
+
+   <!-- Start of postfooter -->
+   <table width="100%" bgcolor="#ECF0F1" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" mc:repeatable="footer">      
+         <tr>
+            <td align="center">
+               <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                  
+                     <tr>
+                        <td align="center">
+                           <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">                              
+                                 <!-- Spacing -->
+                                 <tr>
+                                    <td width="100%" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                 </tr>
+                                 <!-- End of Spacing -->
+                                 <!-- Postfooter text -->
+                                 <tr>
+                                    <td align="center" valign="middle" style="font-family: Helvetica, Arial, sans-serif; font-size: 10px;color: #999999; text-align:center;" mc:edit="Unsubscribe">
+                                      If you no longer wish to hear from us, <a href="*|UNSUB|*" style="text-decoration: none; color: #E74C3C;">unsubscribe here</a> 
+                                    </td>
+                                 </tr>
+                                 <!-- End of Postfooter text -->
+                                 <!-- Spacing -->
+                                 <tr>
+                                    <td width="100%" height="5" style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;">&nbsp;</td>
+                                 </tr>
+                                 <!-- End of Spacing -->                              
+                           </table>
+                        </td>
+                     </tr>                  
+               </table>
+            </td>
+         </tr>      
+   </table>
+   <!-- End of postfooter -->
+
+  </body>
+</html>
