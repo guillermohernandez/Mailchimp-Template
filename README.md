@@ -3,7 +3,7 @@ Mailchimp Template
 Free Mailchimp Template cause if I wanted to play with all these tables, I would have been a carpenter
 
 ## Demo
-
+![Mailchimp Demo](Mailchimp-Template/screenshot.png)
 
 ## Contact
 #### Guillermo Hernandez Jr
