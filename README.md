@@ -1,6 +1,3 @@
-# Mailchimp-Template
-Free Mailchimp Template
-
 Mailchimp Template
 ======
 Free Mailchimp Template cause if I wanted to play with all these tables, I would have been a carpenter
